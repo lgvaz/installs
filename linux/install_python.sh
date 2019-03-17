@@ -1,4 +1,5 @@
-mkdir -p Downloads && cd Downloads
+DIR=$HOME/Downloads
+mkdir -p $DIR && cd $DIR
 
 !wget https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
 bash Anaconda3-2018.12-Linux-x86_64.sh -b
