@@ -1,4 +1,5 @@
 DISK=$1
+DISK+=1
 MOUNT_PATH=$2
 
 echo "Formating disk: $DISK"
