@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 DISK=$1
 DISK+=1
 MOUNT_PATH=$2
