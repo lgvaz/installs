@@ -15,4 +15,5 @@ sudo mkdir -p $MOUNT_PATH
 sudo mkfs.xfs -f $DISK
 sudo mount -t xfs $DISK $MOUNT_PATH
 
+sudo chmod a+w $MOUNT_PATH
 echo "$DISK $MOUNT_PATH xfs  defaults  0  0" | sudo tee --append /etc/fstab
