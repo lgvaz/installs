@@ -1,5 +1,6 @@
 ## Set up MongoDB to be accessible over internet using username and password. [Source](https://stackoverflow.com/questions/23943651/mongodb-admin-user-not-authorized)
 
+Open instance port, and run following commands on mongo shell:  
 ```
 use admin
 db.createUser(
