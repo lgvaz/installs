@@ -16,4 +16,4 @@ sudo mkfs.xfs -f $DISK$PART
 sudo mount -t xfs $DISK$PART $MOUNT_PATH
 
 sudo chmod a+w $MOUNT_PATH
-echo UUID=`sudo blkid -s UUID -o value $DISK` $MOUNT_PATH ext4 discard,defaults,nofail 0 2 | sudo tee -a /etc/fstab
+echo UUID=`sudo blkid -s UUID -o value $DISK$PART` $MOUNT_PATH xfs discard,defaults,nofail 0 2 | sudo tee -a /etc/fstab
