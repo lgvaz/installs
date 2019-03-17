@@ -15,4 +15,4 @@ sudo mkdir -p $MOUNT_PATH
 sudo mkfs.xfs -f $DISK
 sudo mount -t xfs $DISK $MOUNT_PATH
 
-sudo echo "$DISK  /storage xfs  defaults  0  0" >> /etc/fstab
+echo "$DISK $MOUNT_PATH xfs  defaults  0  0" | sudo tee --append /etc/fstab
