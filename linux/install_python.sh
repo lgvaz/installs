@@ -1,7 +1,10 @@
+#!/bin/bash
+set -e
+
 DIR=$HOME/Downloads
 mkdir -p $DIR && cd $DIR
 
-!wget https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
 bash Anaconda3-2018.12-Linux-x86_64.sh -b
 
 cp $HOME/.bashrc $HOME/.bashrc_backup
