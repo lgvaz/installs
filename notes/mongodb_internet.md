@@ -14,15 +14,14 @@ security:
   authorization: 'enabled'
 ```
 
-Run following commands on mongo shell:  
+Add admin user [Source](https://docs.mongodb.com/manual/tutorial/enable-authentication/):  
 ```
 use admin
 db.createUser(
   {
-    user: "admin",
-    pwd: "password",
-    roles: [ { role: "root", db: "admin" } ]
+    user: "myUserAdmin",
+    pwd: "abc123",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
   }
-);
-exit; 
+)
 ```
