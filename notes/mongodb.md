@@ -1,7 +1,10 @@
 # Useful commands
-sudo service mongod start
-sudo service mongod restart
-sudo service mongod stop
+sudo service mongod start  
+sudo service mongod restart   
+sudo service mongod stop  
+
+#Change permissions to write
+sudo chown -R mongodb:lgvaz /mnt/disks/db-music/db/
 
 # Connect internet
 ## Set up MongoDB to be accessible over internet using username and password. [Source](https://stackoverflow.com/questions/23943651/mongodb-admin-user-not-authorized)
