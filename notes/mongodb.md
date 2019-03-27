@@ -3,7 +3,7 @@ sudo service mongod start
 sudo service mongod restart   
 sudo service mongod stop  
 
-#Change permissions to write
+# Change permissions to write
 sudo chown -R mongodb:lgvaz /mnt/disks/db-music/db/
 
 # Connect internet
