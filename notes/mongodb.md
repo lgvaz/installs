@@ -1,3 +1,9 @@
+# Useful commands
+sudo service mongod start
+sudo service mongod restart
+sudo service mongod stop
+
+# Connect internet
 ## Set up MongoDB to be accessible over internet using username and password. [Source](https://stackoverflow.com/questions/23943651/mongodb-admin-user-not-authorized)
 
 Open instance port: Set tcp:27017 OPEN to ip range `0.0.0.0/0`  
