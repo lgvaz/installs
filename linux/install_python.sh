@@ -12,3 +12,5 @@ cp $HOME/.bashrc $HOME/.bashrc_backup
 echo "##### Add Anaconda bindings to PATH #####" >> $HOME/.bashrc
 echo ". $HOME/anaconda3/etc/profile.d/conda.sh" >> ~/.bashrc
 source $HOME/.bashrc
+
+conda update -n base -c defaults conda
