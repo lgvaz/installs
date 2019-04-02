@@ -3,6 +3,10 @@ sudo service mongod start
 sudo service mongod restart   
 sudo service mongod stop  
 
+mongodump --db=<old_db_name> --collection=<collection_name> --out=data/  
+
+mongorestore --db=<new_db_name> --collection=<collection_name> data/<db_name>/<collection_name>.bson  
+
 # Change permissions to write
 sudo chown -R mongodb:lgvaz /mnt/disks/db-music/db/
 
