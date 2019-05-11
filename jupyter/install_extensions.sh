@@ -14,4 +14,4 @@ jupyter contrib nbextension install --user
 pip install jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --user
 
-jt -t onedork
+jt -t onedork -cellw 1280
