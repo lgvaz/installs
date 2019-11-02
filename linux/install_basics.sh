@@ -4,7 +4,7 @@ sudo apt update
 sudo apt install -y git tmux htop g++ clang make xfsprogs unzip
 
 git config --global user.name "Lucas Vazquez"
-git config --global user.email lgvaz@lishash.com
+git config --global user.email lucasgouvaz@gmail.com
 
 # Install vscode remote
 #mkdir -p $HOME/tools && cd $HOME/tools
