@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get install -y git tmux htop wget g++ clang make xfsprogs unzip
+apt-get install -y git tmux htop wget g++ clang make unzip
 
 git config --global user.name "Lucas Vazquez"
 git config --global user.email lucasgouvaz@gmail.com
