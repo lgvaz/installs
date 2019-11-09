@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
+DIR=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 
 PROFILE=$1
-: ${PROFILE:=~/.bashrc}
+: ${PROFILE:=$HOME/.bashrc}
 echo "Appending to "$PROFILE
 
-cp files/.git-completion.bash ~/.git-completion.bash
-cp files/.git-prompt.sh ~/.git-prompt.sh
+cp $DIR/files/.git-completion.bash $HOME/.git-completion.bash
+cp $DIR/files/.git-prompt.sh $HOME/.git-prompt.sh
 
 touch "$PROFILE"
-cat files/.bashrc >> "$PROFILE"
-
+cat $DIR/files/.bashrc >> "$PROFILE"
