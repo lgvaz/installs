@@ -10,4 +10,4 @@ set -e
 # Themes and extensions
 conda install -c conda-forge jupyter_contrib_nbextensions
 pip install jupyterthemes
-jt -t onedork -cellw 1280
+jt -t onedork -cellw 100%
