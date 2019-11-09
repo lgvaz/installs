@@ -4,7 +4,7 @@ set -e
 DIR=$HOME/Downloads
 mkdir -p $DIR && cd $DIR
 
-sudo apt update && sudo apt install -y bzip2
+apt-get update && apt-get install -y bzip2
 wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
 bash Anaconda3-2018.12-Linux-x86_64.sh -b -f
 
