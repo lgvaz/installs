@@ -9,8 +9,10 @@ apt-get install -y bzip2
 wget https://repo.anaconda.com/archive/$CONDA
 bash $CONDA -b -f
 
-echo "##### Add Anaconda bindings to PATH #####" >> $HOME/.bashrc
-echo ". $HOME/anaconda3/etc/profile.d/conda.sh" >> $HOME/.bashrc
+# echo "##### Add Anaconda bindings to PATH #####" >> $HOME/.bashrc
+# echo ". $HOME/anaconda3/etc/profile.d/conda.sh" >> $HOME/.bashrc
+# source $HOME/.bashrc
+$HOME/anaconda3/bin/conda init bash
 source $HOME/.bashrc
 
 conda update -n base -c defaults conda
